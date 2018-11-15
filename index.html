@@ -1,98 +1,406 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>Ahmed Hajat Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Cabin|Quicksand" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- HOSTED -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700" rel="stylesheet">
+  <style media="all" data-href="/node_modules/mdi/font/css/materialdesignicons.min.css"></style>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous">
+
+  <!-- LOCAL -->
   <link rel="stylesheet" href="style.css">
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="https://use.fontawesome.com/735bc4fb69.js"></script>
+
+  <!-- HOSTED -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+
+  <title>Ahmed Hajat</title>
+
 </head>
+
 <body>
-  <div class="container-fluid">
-    <!-- top navigation bar /-->
-    <ul class="topnav">
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#about">About</a></li>
-    </ul>
-    <br>
-    <!-- main heading -->
-    <h1> Ahmed's Portfolio </h1>
-    <br>
-    <!-- MAIN (Center website) -->
-    <div class="main">
-      <!-- About section -->
-      <section>
-        <h id="about">
-          <h2>About Me</h2>
-          <br>
-          <p> Thanks for checking out my portfolio. I've recently begun learning to code using various web resources, namely: Free Code Camp, Codecademy and W3Schools. </p>
-      </section>
-      <br>
-      <section>
-        <!-- Portfolio Gallery Grid -->
-        <h id="portfolio">
-          <h2>Portfolio</h2>
-      </section>
-      <div class="row">
-        <div class="column">
-          <div class="content">
-<img <a href="https://ahmedh14.github.io/ArcReactor/" src="ScreenShot.png"
-  alt="Website1" style="width:100%">
-            <h3 <a href="https://ahmedh14.github.io/ArcReactor/"> Iron Man Arc Reactor</a> </h3>
-            <p>I used CSS animation & styling to re-create Iron Man's Arc Reactor</p>
+  <div class="overflow-wrap">
+
+    <!-- HOME -->
+    <div class="modal-wrap flex">
+      <div class="mask"></div>
+      <div class="modal" id="modal" style="max-width: 700px;">
+        <div class="carousel-wrap" style="width: 700px;">
+          <div class="window">
+            <div id="carousel" style="left: -700px;">
+              <div class="slide" style="width: 700px;"></div>
+              <div class="slide" style="width: 700px;"></div>
+              <div class="slide" style="width: 700px;"></div>
+            </div>
+              <i class="fas fa-chevron-left"></i> 
+              <i class="fas fa-chevron-right" id="next"></i>
           </div>
+
         </div>
-        <div class="column">
-          <div class="content">
-            <img src="https://s3-us-west-2.amazonaws.com/i.cdpn.io/1593471.ZavRNL.2a8a6200-9d39-4764-a284-4cfacd0c19eb.png" alt="Website1" style="width:100%">
-            <h3 <a href="https://codepen.io/AhmedHajat/pen/ZavRNL"> FCC: Tribute Page</a> </h3>
-            <p>Lorem ipsum..</p>
-          </div>
+        <div class="info-box">
+          <div class="title"></div>
+          <div class="tag"></div>
+          <div class="detail"></div>
+          <a href="#" target="_blank">
+          <div class="button"><i class="fas fa-external-link-alt"></i>VIEW SITE</div>
+          </a>
         </div>
-        <div class="column">
-          <div class="content">
-            <img src="https://images.pexels.com/photos/173301/pexels-photo-173301.jpeg?h=350&dpr=2&auto=compress&cs=tinysrgb" alt="Nature" style="width:100%">
-            <h3>My Work</h3>
-            <p>Lorem ipsum..</p>
-          </div>
-        </div>
-        <div class="column">
-          <div class="content">
-            <img src="https://images.pexels.com/photos/176851/pexels-photo-176851.jpeg?h=350&dpr=2&auto=compress&cs=tinysrgb" alt="Mountains" style="width:100%">
-            <h3>My Work</h3>
-            <p>Lorem ipsum..</p>
-          </div>
-        </div>
-      </div>
-      </section>
-      <br>
-      <!-- contact me section -->
-      <section>
-        <h id="contact">
-          <h2> Contact Me! </h2>
-          <br>
-          <p> You can reach me through any of the following platforms: </p>
-          <p>
-            <a href="mailto:ahmedhajat@gmail.com" target="_blank">  <i class="fa fa-envelope" aria-hidden="true"></i></a>
-            <a href="https://www.linkedin.com/in/ahmed-hajat/" target="_blank">  <i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-            <a href="https://codepen.io/AhmedHajat/" target="_blank">  <i class="fa fa-codepen" aria-hidden="true"></i></a>
-            <a href="https://github.com/AhmedH14" target="_blank">  <i class="fa fa-github" aria-hidden="true"></i></a>
-            <a href="https://www.freecodecamp.org/ahmedh14" target="_blank">  <i class="fa fa-free-code-camp" aria-hidden="true"></i></a>
-          </p>
-          <br>
+        <i class="far fa-window-close"></i> </div>
     </div>
-    <!-- footer section -->
+
+    <section id="home" class="flex height-fix">
+      <div id="pt" class="canvas"><canvas id="canvas" width="2580" height="966" style="width: 1290px; height: 483px;"></canvas></div>
+      <div class="flex">
+
+        <div class="text">
+          Hello, I'm <span class="highlight">Ahmed Hajat</span>.
+          <br>
+          Project manager and front-end web developer.
+        </div>
+
+<div class="button page-link" dest="about">View my work </div>
+
+        <nav class="flex desk">
+          <div class="link-wrap">
+            <div class="page-link active" dest="home">home</div>
+            <div class="page-link" dest="about">about</div>
+            <div class="page-link" dest="portfolio">portfolio</div>
+            <div class="page-link" dest="contact">contact</div>
+          </div>
+        </nav>
+      </div>
+
     </section>
-    <footer>
-      <p2> <i class="fa fa-code" aria-hidden="true"></i>'d with <i class="fa fa-coffee" aria-hidden="true"></i> and <i class="fa fa-spotify" aria-hidden="true"></i> by Ahmed Hajat.
-      </p2>
-    </footer>
-    <!-- END MAIN -->
-  </div>
+
+      <!-- ABOUT -->
+      <section id="about">
+        <div class="container flex">
+      
+          <div class="header waypoint animated slide-in-left" data-animation="slide-in-left">ABOUT</div>
+          <div class="header-bar waypoint animated slide-in-left" data-animation="slide-in-left" data-delay=".5s" style="animation-delay: 0.5s;"></div>
+      
+         <div class="flex row label-wrap">
+            <div class="flex row-gt-sm">
+              <div class="flex bullet-wrap ">
+                <div class="hex-wrap waypoint animated flip-in-x" data-animation="flip-in-x">
+                  <div class="hexagon"><i class="fas fa-puzzle-piece"></i>
+                  </div>
+                </div>
+                <div class="waypoint animated fade-in" data-animation="fade-in">
+                  <div class="label bold">Problem Solver</div>
+                  <div>I love a challenge.</div>
+                </div>
+              </div>
+      
+              <div class="flex bullet-wrap ">
+                <div class="hex-wrap waypoint animated flip-in-x" data-animation="flip-in-x" data-delay=".2s" style="animation-delay: 0.2s;">
+                  <div class="hexagon"><i class="fas fa-bullhorn"></i>
+                  </div>
+                </div>
+                <div class="waypoint animated fade-in" data-animation="fade-in" data-delay=".2s" style="animation-delay: 0.2s;">
+                  <div class="label bold">Director</div>
+                  <div>Organising and planning <br> teams is where I excel.</div>
+                </div>
+              </div>
+            </div>
+            <div class="flex row-gt-sm">
+              <div class="flex bullet-wrap ">
+                <div class="hex-wrap waypoint animated flip-in-x" data-animation="flip-in-x" data-delay=".4s" style="animation-delay: 0.4s;">
+                  <div class="hexagon"><i class="fas fa-book-reader"></i>
+                  </div>
+                </div>
+                <div class="waypoint animated fade-in" data-animation="fade-in" data-delay=".4s" style="animation-delay: 0.4s;">
+                  <div class="label bold">Curious</div>
+                  <div>I am always learning and <br> reading.</div>
+                </div>
+              </div>
+      
+              <div class="flex bullet-wrap ">
+                <div class="hex-wrap waypoint animated flip-in-x" data-animation="flip-in-x" data-delay=".6s" style="animation-delay: 0.6s;">
+                  <div class="hexagon"><i class="fas fa-user-astronaut"></i>
+                  </div>
+                </div>
+                <div class="waypoint animated fade-in" data-animation="fade-in" data-delay=".6s" style="animation-delay: 0.6s;">
+                  <div class="label bold">Dynamic</div>
+                  <div>I'm multi-skilled and adapt <br> to get the job done. </div>
+                </div>
+              </div>
+            </div>
+          </div> 
+      
+          <div class="skills-wrapper flex row-gt-sm">
+            <div class="flex flex-50-gt-sm waypoint" data-animation="slide-in-left">
+              <img src="img/Happy Place.jpg" class="me">
+              <div>
+                I love working with other people to build <br> things that everyone will want to use everyday.
+                <br> When I'm not working, I'm geeking out over <br> comics,football, movies, politics and travel.
+                <br>
+                <span class="page-link highlight" dest="contact">Let's collaborate.</span>
+              </div>
+            </div>
+      
+            <div class="flex flex-50-gt-sm waypoint bars-wrap" data-animation="slide-in-right">
+              
+              <div class="bar flex">
+                <div class="bar fill" style="width:90%">
+                  <div class="tag bold flex">Project Management</div>
+                </div>
+                <span>90%</span>
+              </div>
+      
+              <div class="bar flex">
+                <div class="bar fill" style="width:95%">
+                  <div class="tag bold flex">Project Financial Management</div>
+                </div>
+                <span>95%</span>
+              </div>
+      
+      
+              <div class="bar flex">
+                <div class="bar fill" style="width:95%">
+                  <div class="tag bold flex">Stakeholder Communication</div>
+                </div>
+                <span>95%</span>
+              </div>
+      
+              <div class="bar flex">
+                <div class="bar fill" style="width:90%">
+                  <div class="tag bold flex">PM Software (Asana/JIRA/MS Project)</div>
+                </div>
+                <span>90%</span>
+              </div>
+      
+              <div class="bar flex">
+                <div class="bar fill" style="width:80%">
+                  <div class="tag bold flex">HTML</div>
+                </div>
+                <span>80%</span>
+              </div>
+      
+              <div class="bar flex">
+                <div class="bar fill" style="width:80%">
+                  <div class="tag bold flex">CSS</div>
+                </div>
+                <span>80%</span>
+              </div>
+      
+      
+              <div class="bar flex">
+                <div class="bar fill" style="width:60%">
+                  <div class="tag bold flex">JavaScript</div>
+                </div>
+                <span>60%</span>
+              </div>
+      
+              <div class="bar flex">
+                <div class="bar fill" style="width:95%">
+                  <div class="tag bold flex">MS Office & Google Docs</div>
+                </div>
+                <span>95%</span>
+              </div>
+      
+
+      
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+      <!-- PORTFOLIO -->
+      <section class="flex" id="portfolio">
+      
+        <div class="header waypoint" data-animation="slide-in-right">PROJECTS</div>
+        <div class="header-bar waypoint" data-animation="slide-in-right" data-delay=".3s" style="animation-delay: 0.3s;"></div>
+      
+       <div class="filter-wrap waypoint" data-animation="fade-in">
+          <div class="flex row">
+            <div class="filter active" data-filter="all">ALL</div>
+            <div class="filter" data-filter=".CSS">HTML/CSS</div>
+            <!-- <div class="filter" data-filter=".React">REACT</div> -->
+            <div class="filter" data-filter=".js">JAVASCRIPT</div>
+          </div>
+          <div class="float-bar" style="left: 25px; width: 112px;">
+            <div class="flex row" style="left: -25px;">
+              <div class="filter" data-filter="all">ALL</div>
+              <div class="filter" data-filter=".CSS">HTML/CSS</div>
+              <!-- <div class="filter" data-filter=".REACT">REACT</div> -->
+              <div class="filter" data-filter=".js">JAVASCRIPT</div>
+            </div>
+          </div>
+        </div>
+      
+        <div id="gallery" class="container flex row wrap waypoint">
+          <div class="mix js" data-my-order="1" style="display: inline-block;" data-bound="">
+      <div>
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">RoboFriends</div>
+                <span class="highlight">REACT</span>
+              </div>
+              <div class="button" id="RoboFriends">LEARN MORE</div>
+            </div>
+          </div>
+      
+          <div class="mix CSS" data-my-order="1" style="display: inline-block;" data-bound="">
+            <div>
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">Arc Reactor</div>
+                <span class="highlight">HTML/CSS</span>
+              </div>
+              <div class="button" id="ArcReactor">LEARN MORE</div>
+            </div>
+          </div>
+      
+          <div class="mix CSS" data-my-order="1" style="display: inline-block;" data-bound="">
+            <div>
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">Conurban</div>
+                <span class="highlight">HTML/CSS</span>
+              </div>
+              <div class="button" id="Conurban">LEARN MORE</div>
+            </div>
+          </div>
+      
+ <!--         <div class="mix js" data-my-order="1" style="display: inline-block;" data-bound="">
+            <div>
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">NEVER SURRENDER</div>
+                <span class="highlight">Pure JavaScript</span>
+              </div>
+              <div class="button" id="never">LEARN MORE</div>
+            </div>
+          </div>
+      
+          <div class="mix rails" data-my-order="1" style="display: inline-block;" data-bound="">
+            <div>
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">Powur</div>
+                <span class="highlight">Ruby on Rails + Angular</span>
+              </div>
+              <div class="button" id="powur">LEARN MORE</div>
+            </div>
+          </div>
+      
+      
+          <div class="mix node" data-my-order="1" style="display: inline-block;" data-bound="">
+            <div>
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">The Mall</div>
+                <span class="highlight">Node + React.js</span>
+              </div>
+              <div class="button" id="themall">LEARN MORE</div>
+            </div>
+          </div> -->
+        </div>
+      </section>
+      
+      
+      
+      <!-- CONTACT -->
+      <section id="contact">
+      
+        <div class="container flex">
+          <div class="header waypoint" data-animation="slide-in-left">CONTACT</div>
+          <div class="header-bar waypoint" data-animation="slide-in-right" data-delay=".25s" style="animation-delay: 0.25s;"></div>
+          <div class="highlight waypoint" data-animation="slide-in-right" data-delay=".5s" style="animation-delay: 0.5s;">
+            Have a question or want to work together?</div>
+          <form class="waypoint" data-animation="pop-in" data-delay=".5s" id="contact-form" style="animation-delay: 0.5s" 
+          action="https://formspree.io/ahmedhajat@gmail.com" method="POST">
+              <input placeholder="Your name" type="text" name="name" required="">
+              <input placeholder="Your email" type="email" name="_replyto" required="">
+              <textarea placeholder="Your Message" type="text" name="message"></textarea>
+            <div id="success">
+            <div>Your message was sent successfully. Thanks!<span <i class="far fa-window-close"></i>></span></div>
+            </div>
+            <input class="button" type="submit" id="submit" value="Send">
+          </form>
+        </div>
+      </section>
+
+      <footer>
+  <!-- <i class="fas fa-chevron-up" dest="home"></i> -->
+      
+        <div class="icon-wrap flex row">
+          <a href="mailto:ahmedhajat@gmail.com" target="_blank"> 
+            <div class="flex icon" id="icon-1">
+            <i class="fa fa-envelope" aria-hidden="true"></i> </div>
+          </a>
+          <a href="https://www.linkedin.com/in/ahmed-hajat">
+            <div class="flex icon" id="icon-2">
+            <i class="fab fa-linkedin"></i> </div>
+          </a>
+          <a href="https://github.com/AhmedH14/">
+            <div class="flex icon" id="icon-5">
+            <i class="fab fa-github-alt"></i>
+            </div>
+          </a>
+          <a href="https://codepen.io/AhmedHajat/"">
+            <div class="flex icon" id="icon-5">
+            <i class="fab fa-codepen"></i> </div>
+          </a>
+        </div>
+        <br>
+        <div class="info-box">
+          <p2 class="p2"> <i class="fa fa-code" aria-hidden="true"></i>'d with <i class="fa fa-coffee" aria-hidden="true"></i> and <i class="fab fa-spotify"
+        aria-hidden="true"></i> by Ahmed Hajat.
+          </p2>
+        </div>
+      </footer>
+      
+      </div>
+      
+      <div id="preload">
+        <img src="img/Happy Place.jpg">
+  <!-- <img src="img/filler.jpg">
+        <img src="img/thumb-1.jpg">
+        <img src="img/thumb-2.jpg">
+        <img src="img/thumb-3.jpg">
+        <img src="img/thumb-4.jpg">
+        <img src="img/thumb-5.jpg">
+        <img src="img/thumb-6.jpg">
+        <img src="img/slides/mystand-0.jpg">
+        <img src="img/slides/mystand-1.jpg">
+        <img src="img/slides/mystand-2.jpg">
+        <img src="img/slides/never-0.jpg">
+        <img src="img/slides/never-1.jpg">
+        <img src="img/slides/never-2.jpg"> -->
+        <img src="img/slides/Conurban.png">
+  <!--  <img src="img/slides/powur-1.jpg">
+        <img src="img/slides/powur-2.jpg"> -->
+        <img src="img/slides/RoboFriends.png">
+  <!--  <img src="img/slides/roambi-1.jpg">
+        <img src="img/slides/roambi-2.jpg">
+        <img src="img/slides/themall-0.jpg">
+        <img src="img/slides/themall-1.jpg">
+        <img src="img/slides/themall-2.jpg">
+        <img src="img/slides/walker-0.jpg">
+        <img src="img/slides/walker-1.jpg">
+        <img src="img/slides/walker-2.jpg"> -->
+      </div>
+
+
+
+<script src="scripts/canvas.js"></script> 
+<script src="scripts/index.js"></script>
+<script src="scripts/modal.js"></script>
+<script src="scripts/pt.min.js"></script>
+
 </body>
 </html>
